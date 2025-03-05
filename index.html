@@ -22,6 +22,13 @@
             transform: scale(1.05);
             box-shadow: 0 10px 25px rgba(0,0,0,0.1);
         }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+        }
     </style>
 </head>
 <body 
@@ -155,8 +162,109 @@
         </div>
     </section>
 
+    <!-- Nova Seção de Serviços -->
+    <section id="servicos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-4 text-gray-800">Meus Serviços</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Ofereço serviços de manutenção e suporte para computadores e sistemas. Confira abaixo as opções disponíveis e entre em contato para mais informações.</p>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Serviço 1 -->
+                <div class="service-card bg-white border border-gray-200 rounded-lg p-6 hover:border-purple-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Formatação e Instalação de Sistemas</h3>
+                    <p class="text-gray-600 mb-3">Windows, Linux e outros sistemas operacionais. Inclui configuração inicial e drivers básicos.</p>
+                    <span class="font-bold text-purple-600">30€ - 50€</span>
+                </div>
+                
+                <!-- Serviço 2 -->
+                <div class="service-card bg-white border border-gray-200 rounded-lg p-6 hover:border-purple-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Remoção de Vírus e Malware</h3>
+                    <p class="text-gray-600 mb-3">Eliminação de ameaças, limpeza do sistema e implementação de proteções básicas.</p>
+                    <span class="font-bold text-purple-600">25€ - 40€</span>
+                </div>
+                
+                <!-- Serviço 3 -->
+                <div class="service-card bg-white border border-gray-200 rounded-lg p-6 hover:border-purple-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Limpeza Interna e Troca de Pasta Térmica</h3>
+                    <p class="text-gray-600 mb-3">Limpeza completa de componentes internos e aplicação de pasta térmica.</p>
+                    <span class="font-bold text-purple-600">30€ - 45€</span>
+                </div>
+                
+                <!-- Serviço 4 -->
+                <div class="service-card bg-white border border-gray-200 rounded-lg p-6 hover:border-purple-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Instalação de Programas e Drivers</h3>
+                    <p class="text-gray-600 mb-3">Instalação e configuração de aplicativos, softwares essenciais e drivers específicos.</p>
+                    <span class="font-bold text-purple-600">20€ - 35€</span>
+                </div>
+                
+                <!-- Serviço 5 -->
+                <div class="service-card bg-white border border-gray-200 rounded-lg p-6 hover:border-purple-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Substituição de Peças</h3>
+                    <p class="text-gray-600 mb-3">Troca de componentes como RAM, SSD, HDD, fontes e placas de vídeo com instalação e configuração.</p>
+                    <span class="font-bold text-purple-600">40€ - 70€</span>
+                </div>
+                
+                <!-- Serviço 6 -->
+                <div class="service-card bg-white border border-gray-200 rounded-lg p-6 hover:border-purple-300">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Diagnóstico de Problemas</h3>
+                    <p class="text-gray-600 mb-3">Identificação e resolução de problemas como falha de inicialização, superaquecimento ou perda de desempenho.</p>
+                    <span class="font-bold text-purple-600">25€ - 50€</span>
+                </div>
+                
+                <!-- Serviço 7 -->
+                <div class="service-card bg-white border border-gray-200 rounded-lg p-6 hover:border-purple-300 lg:col-start-2">
+                    <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-semibold mb-2">Upgrade de Componentes</h3>
+                    <p class="text-gray-600 mb-3">Melhoria de desempenho através da instalação de SSD, aumento de memória RAM e outras atualizações de hardware.</p>
+                    <span class="font-bold text-purple-600">40€ - 80€</span>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#contato" class="inline-block bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 transition-colors">
+                    Solicitar Orçamento
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Seção de Contato -->
-    <section id="contato" class="py-16">
+    <section id="contato" class="py-16 bg-gray-50">
         <div class="container mx-auto px-4">
             <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Vamos Conversar</h2>
             <div class="max-w-lg mx-auto">
